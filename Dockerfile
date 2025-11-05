@@ -4,5 +4,3 @@ COPY . .
 RUN pip install Flask psycopg2-binary
 EXPOSE 3000
 CMD ["python", "app.py"]
-
-
