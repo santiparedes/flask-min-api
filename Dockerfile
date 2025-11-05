@@ -1,9 +1,6 @@
 FROM python:latest
-
 WORKDIR /app
 COPY . .
-RUN pip install --no-cache-dir Flask
-
+RUN pip install Flask psycopg2-binary
 EXPOSE 3000
 CMD ["python", "app.py"]
-
